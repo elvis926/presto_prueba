@@ -1,0 +1,19 @@
+<div class="container">
+
+  <nav>
+    <ul>
+      <li><a [routerLink]="[ '/' ]">Role Based</a></li>
+    </ul>
+    <ul>
+      <li *ngIf="!userStatus"><a [routerLink]="[ '/signup' ]">Signup</a></li>
+      <li *ngIf="!userStatus"><a [routerLink]="[ '/login' ]">Login</a></li>
+      <li *ngIf="userStatus && userStatus === 'admin'"><a [routerLink]="[ '/admin' ]">admin</a></li>
+      <li *ngIf="userStatus"><button class="logout" (click)="logout()">Logout</button></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  </div>

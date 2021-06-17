@@ -5,23 +5,19 @@ HTML {
     min-height: 100%
 }
 
-body {
+ body {
     margin: 0px;
     padding: 0px;
-    background: rgb(208,63,251);
-    background: -moz-radial-gradient(circle, rgba(208,63,251,1) 0%, rgba(70,107,252,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(208,63,251,1) 0%, rgba(70,107,252,1) 100%);
-    background: radial-gradient(circle, rgba(208,63,251,1) 0%, rgba(70,107,252,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d03ffb",endColorstr="#466bfc",GradientType=1);
-    color: #eee;
-    font-family: "Poppins";
+
+    color:#000000;
+    font-family: "Comfortaa";
 }
 
 nav  {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 nav ul {
@@ -30,9 +26,9 @@ nav ul {
 }
 
 nav ul li a {
-    color: #eee;
+    color: #000000;
     text-decoration: none;
-    
+
 }
 nav ul:first-of-type li a {
     font-weight: bold;
@@ -90,7 +86,7 @@ header div img {
 
 .logout {
     background: #4A00E0;
-    color: #eee;
+    color: #000000;
     border: none;
     padding: 10px;
     font-size: 16px;
@@ -130,11 +126,10 @@ form input[type="submit"]{
    margin-top: 20px;
    width: 30%;
    border: none;
-   background: #8E2DE2;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   color: #eee;
+   background: #61ac2e;  /* fallback for old browsers */
+
+   color: #000000;
    padding: 12px;
    font-size: 1.2rem;
-   border-radius: 4px; 
+   border-radius: 4px;
 }

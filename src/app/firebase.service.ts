@@ -67,10 +67,16 @@ export class FirebaseService {
             this.currentUser = userRef.data();
             //setUserStatus
             this.setUserStatus(this.currentUser)
-            if(userRef.data().role !== "admin") {
+            if(userRef.data().role ==="admin") {
               this.router.navigate(["/"]);
-            }else{
+            }/* else{
               this.router.navigate(["/admin"]);
+            } */
+            if(userRef.data().role ==="gerente") {
+              this.router.navigate(["/gerenteVertical"]);
+            }
+            if(userRef.data().role ==="rrhh") {
+              this.router.navigate(["/recursos"]);
             }
           })
         })

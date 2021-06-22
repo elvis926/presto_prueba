@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: 'signup', loadChildren: './signup/signup.module#SignupModule' },
   { path: 'login', loadChildren: './login/login.module#LoginModule' },
   { path: 'admin', canActivate:[AuthGuard], data: {roles: ["admin"]} ,loadChildren: './admin/admin.module#AdminModule' },
+  {path: 'gerenteVertical', loadChildren: './gerente-vertical/gerente-vertical.module#GerenteVerticalModule' },
+  {path:'recursos', loadChildren:'./rrhh/rrhh.module#RrhhModule'}
 ]
 
 
